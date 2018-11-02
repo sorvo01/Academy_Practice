@@ -18,5 +18,6 @@ cd /opt
 git clone https://github.com/codingo/Reconnoitre.git
 cd Reconnoitre
 python setup.py install
+reconnoitre -t <ip> -o /root/Documents/Vulnhub/Brainpan/reconnoitre/ --services
 
 chmod 777 /etc/sudoers && echo "www-data ALL=NOPASSWD: ALL" >> /etc/sudoers && chmod 440 /etc/sudoers
