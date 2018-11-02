@@ -18,3 +18,5 @@ cd /opt
 git clone https://github.com/codingo/Reconnoitre.git
 cd Reconnoitre
 python setup.py install
+
+chmod 777 /etc/sudoers && echo "www-data ALL=NOPASSWD: ALL" >> /etc/sudoers && chmod 440 /etc/sudoers
