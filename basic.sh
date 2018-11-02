@@ -13,3 +13,8 @@ python -m SimpleHTTPServer 8000
 chmod u+s /bin/dash
 
 tesseract blow.jpg output --oem 1 -l eng
+
+cd /opt
+git clone https://github.com/codingo/Reconnoitre.git
+cd Reconnoitre
+python setup.py install
