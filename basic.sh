@@ -16,6 +16,7 @@ tesseract blow.jpg output --oem 1 -l eng
 
 cd /opt
 git clone https://github.com/codingo/Reconnoitre.git
+git clone https://github.com/danielmiessler/SecLists.git
 cd Reconnoitre
 python setup.py install
 reconnoitre -t <ip> -o /root/Documents/Vulnhub/Brainpan/reconnoitre/ --services
