@@ -24,3 +24,12 @@ reconnoitre -t <ip> -o /root/Documents/Vulnhub/Brainpan/reconnoitre/ --services
 chmod 777 /etc/sudoers && echo "www-data ALL=NOPASSWD: ALL" >> /etc/sudoers && chmod 440 /etc/sudoers
 
 apt-get install iotop iftop htop fatrace wavemon -y
+
+#NFS
+apt-get install nfs-common -y
+showmount --exports 172.25.113.65
+mkdir /tmp/nfs
+mount -t nfs 192.168.1.33:/home/vulnix /tmp/nfs
+cd /tmp/nfs
+
+smtp-user-enum -M VRFY -U /usr/share/metasploit-framework/data/wordlists/unix_users.txt -t <ip>
