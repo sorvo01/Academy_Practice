@@ -26,6 +26,8 @@ chmod 777 /etc/sudoers && echo "www-data ALL=NOPASSWD: ALL" >> /etc/sudoers && c
 apt-get install iotop iftop htop fatrace wavemon -y
 
 #NFS
+rpcinfo -p <ip>
+nmap -sU -sT -p 2049 <ip>
 apt-get install nfs-common -y
 showmount --exports 172.25.113.65
 mkdir /tmp/nfs
