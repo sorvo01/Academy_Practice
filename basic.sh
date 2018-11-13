@@ -1,3 +1,5 @@
+apt-get install seclists
+
 arp-scan -I eth0 --srcaddr=DE:AD:BE:EF:CA:BA <ip>/24
 nmap -sC sV <ip> -oA nmap/<ip>
 nmap -sC -sV -p 80 --script "http-*" <ip>
