@@ -23,6 +23,10 @@ cd Reconnoitre
 python setup.py install
 reconnoitre -t <ip> -o /root/Documents/Vulnhub/Brainpan/reconnoitre/ --services
 
+git clone https://github.com/codingo/VHostScan.git
+cd VHostScan/
+python3 setup.py install
+
 chmod 777 /etc/sudoers && echo "www-data ALL=NOPASSWD: ALL" >> /etc/sudoers && chmod 440 /etc/sudoers
 
 apt-get install iotop iftop htop fatrace wavemon -y
